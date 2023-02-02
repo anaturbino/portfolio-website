@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="img/flavicon.ico" rel="shortcut icon">
     <meta charset="utf-8">
-    <title>Ana Turbino - UX/UI Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Ana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400&display=swap" rel="stylesheet">
 </head>
+<body>
+    <style>
+        body{
+            background-color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            line-height: 2;
+            color: #53565B;
+            }
+            h1, h2, h3, h4{
+                line-height: 1.5;
+            }
+            h1{
+                font-family: 'Gayathri', sans-serif;
+                font-size: 24;
+            }
+            h2{
+                font-family: 'Gayathri', sans-serif;
+                font-size: 20;
+                font-weight: 400;
+            }
+            img{
+                width: 100%;
+            }
+            a {
+            color: darkgrey;
+            text-decoration: none; /* No underlining */
+            }
+            a:hover {
+            color: black;
+            text-decoration: underline; /* Underlining when hovering over a link */
+            }
+            a:visited { /* visited link */
+            color: darkgrey;
+            }
+            a:active { /* selected link */
+            color: lightgreen;
+            }
+            a:hover,
+            a:focus {
+             color: black;
+            text-decoration: underline;
+            }
+            .button {
+            display: inline-block; 
+            background-color: lightgray;
+            color: #000000; /* needed to override the default link color */
+            font-weight: 400;
+            padding: 15px;
+            border-radius: 5px;
+            border-bottom: 2px solid black; /* width of the border, type, color */
+            transition: 0.2s opacity;
+            }
+            .button:hover {
+            opacity: 0.8; /* Reduces the opacity of the button to 80% */
+            text-decoration: none;
+            }
+            .button:active {
+            color: lightsalmon;
+            }
+            .button.contact {
+            background-color: transparent;
+            color: #000000;
+            text-transform: uppercase;
+            border: 2px solid #000000;
+            }
+            .button.contact:hover {
+            background-color: #000000;
+            color: #ffffff;
+            }
+    </style>
+</body>
 <body>
     <header>
         <div>
@@ -43,7 +124,8 @@
                 <p>
                     Foreign is a fully online clothing hub that brings you the option to shop for handcrafted garments from all over the world. Partnering with international designers and brands, Foreign aims to unite cultures through fashion and facilitate cultural shopping from the comfort of your own home.
                 </p>
-                <a href="foreign.html">View Project</a>
+                <a href="foreign.html" class="button">View Project</a>
+                <P></P>
             </div>
             <div>
                 <div>
@@ -58,7 +140,8 @@
                 <p>
                     Aways Five is Location based happy hour finder that allows users to pre-book “build your own packages”  to secure the best deals available. With a clean and user friendly interface, AlwaysFive aims to make it easier for users to find the best and nearest happy hour.
                 </p>
-                <a href="#">View Project</a>
+                <a href="#" class="button">View Project</a>
+                <p></p>
             </div>
             <div>
                 <picture>
@@ -71,7 +154,8 @@
                 <p>
                     Noted is a note taking and keeping app that allows users to see notes as “sticky notes” while keeping a very clean and minimal interface. It features the option to save notes in folders, create group notes, as well as customizing the layout of your notes.
                 </p>
-                <a href="#">View Project</a>
+                <a href="#" class="button">View Project</a>
+                <p></p>
             </div>
              <div>
             <picture>
@@ -84,7 +168,8 @@
             <p>
                 Claimed is a resource for content creators to find publications using their content without associating it to their name. Using Google Lens to reverse image search materials and easily allowing users to add those unclaimed publications to their portfolios, Claimed aims to unite creators and give them the platform to maximize their portfolio while networking with people on the same field. 
             </p>
-            <a href="#">View Project</a>
+            <a href="#" class="button">View Project</a>
+            <p></p>
             </div>
         </div>
     </div>
@@ -95,7 +180,8 @@
         <h2>Let's keep in touch!</h2>
         <p>If you are interested to get in touch with me, email me by clicking the button below or follow my work on social media!</p>
          <div>
-            <a href>Send Email</a>
+            <a href="mailto:anaturbino@icloud.com" class="button contact">Send me an email</a>
+            <p></p>
          </div>
         <div>
             <ol>
