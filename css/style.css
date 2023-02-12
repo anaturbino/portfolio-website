@@ -10,6 +10,7 @@ div{
 }
 #hero {
 background-image: url('img/background@4x.jpg');
+margin-top: -25px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -148,15 +149,20 @@ ol{
 #hero h1 {
     text-align: right;
 }
+.intro{
+  padding-top: 600px;
+}
 .logo h1{
     text-align: center;
 }
 nav {
   position: fixed;
-  background-color: #F1F0F1;
+  background: rgb(200, 54, 54); /* The Fallback */
+  background: rgba(200, 54, 54, 0.5);
   z-index: 1000;
   width: 100%;
   padding: 20px;
+  top: 0;
 }
   nav > ul > li > a {
     padding: 0 15px;
