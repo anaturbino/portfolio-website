@@ -8,9 +8,22 @@
 div{
   display: block;
 }
+#foreign{
+  padding-top: 100px;
+}
+#alwaysfive{
+  padding-top: 100px;
+}
+#noted{
+  padding-top: 140px;
+}
+#claimed{
+  padding-top: 100px;
+}
 #hero {
 background-image: url('img/background@4x.jpg');
-margin-top: -25px;
+opacity: 90%;
+margin-top: -30px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -111,12 +124,15 @@ ol{
   padding: 0;
   margin: 0;
 }
+#me {
+  padding-right: 65px;
+  padding-top: -30px;
+}
 #about-nav .row {
   padding: 0;
-  margin-top: -10px;
+  margin-top: 0px;
   padding-bottom: 0px; 
-  border-bottom: 0px 
-  solid #4a4a4a; 
+  border-bottom: 0px; 
   padding-top: 0px;
   text-align: left;
   margin: 0px 0; /* 25px top and bottom, 0 left and right */
@@ -130,8 +146,7 @@ ol{
   padding: 0;
   margin-top: -10px;
   padding-bottom: 0px; 
-  border-bottom: 0px 
-  solid #4a4a4a; 
+  border-bottom: 0px;
   padding-top: 0px;
   text-align: left;
   margin: 0px 0; /* 25px top and bottom, 0 left and right */
@@ -139,8 +154,6 @@ ol{
 }
 .row { 
     padding-bottom: 25px; 
-    border-bottom: 1px 
-    solid #4a4a4a; 
     padding-top: 15px;
     text-align: left;
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -148,12 +161,15 @@ ol{
 }
 #hero h1 {
     text-align: right;
+    padding-right: 30px;
 }
 .intro{
   padding-top: 600px;
 }
 .logo h1{
     text-align: center;
+    max-width: 150px;
+    min-width: 641px
 }
 nav {
   position: fixed;
@@ -173,22 +189,33 @@ nav {
     width: 100%;
   }
   .pic img {
-    width: 40%;
-    margin: 10px; /* 50% of the container width */
+    width: 60%;
     height: auto; /* preserve aspect ratio */
     float: right;
-    margin-left: 10px;
+    margin-right: 40px;
+    padding-top: 40px;
  }
+.about-me {
+  margin-top: 100px;
+}
+.image-container {
+  margin-right: 50px;
+}
 footer {
  text-align: center;
- padding: 30px;
- background: url(img/background@4x.jpg);
  }
  #about{
   display: inline-block;
  }
- #hero span {
-  display: block;
+ #project-1{
+  background: url(img/background@4x.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+ .highlight{
+  color: #FF5EAB;
 }
 .col-md-6 {
   width: 50%;
@@ -202,7 +229,7 @@ footer {
   display: table;
 }
 .col-sm-12 {
-  width: 50%;
+  width: 100%;
 }
 .grid-container {
   grid-template-columns: auto;
@@ -244,7 +271,7 @@ nav {
 	float: right;
 	line-height: 32px;
 	margin-bottom: 0;
-	padding-top: 16px;
+  margin-top: -23px;
 }
 
 nav ul li {
@@ -272,6 +299,8 @@ nav ul li {
 
 #hero .logo {
 	float: left;
+  max-width: 150px;
+  min-width: 641px
 }
 .responsive {
 	display: none;
