@@ -8,22 +8,62 @@
 div{
   display: block;
 }
+#project-1 {
+  transition: transform 0.5s ease-out;
+}
+#project-1:hover {
+  transform: translateX(-10px);
+}
+#project-2 {
+  transition: transform 0.5s ease-out;
+}
+#project-2:hover {
+  transform: translateX(-10px);
+}
+#project-3 {
+  transition: transform 0.5s ease-out;
+}
+#project-3:hover {
+  transform: translateX(-10px);
+}
+#project-4 {
+  transition: transform 0.5s ease-out;
+}
+#project-4:hover {
+  transform: translateX(-10px);
+}
 #foreign{
   padding-top: 100px;
+  transition: transform 0.5s ease-out;
+}
+#foreign:hover {
+  transform: translateX(-10px);
 }
 #alwaysfive{
   padding-top: 100px;
+  transition: transform 0.5s ease-out;
+}
+#alwaysfive:hover {
+  transform: translateX(-10px);
 }
 #noted{
   padding-top: 140px;
+  transition: transform 0.5s ease-out;
+}
+#noted:hover {
+  transform: translateX(-10px);
 }
 #claimed{
   padding-top: 100px;
+  transition: transform 0.5s ease-out;
+}
+#claimed:hover {
+  transform: translateX(-10px);
 }
 #hero {
 background-image: url('img/background@4x.jpg');
-opacity: 90%;
-margin-top: -30px;
+opacity: 100%;
+margin-top: 0px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -91,7 +131,7 @@ height: 100vh; /* adjust this as needed */
     color: #000000; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     border-bottom: 2px solid black; /* width of the border, type, color */
     transition-property: 0.2s opacity;
     }
@@ -103,13 +143,13 @@ height: 100vh; /* adjust this as needed */
     color: lightsalmon;
     }
     .button.contact {
-    background-color: transparent;
-    color: #000000;
+    background-color: #3d407b;
+    color: white;
     text-transform: uppercase;
-    border: 2px solid #000000;
+    border: 1px solid #3d407b;
     }
     .button.contact:hover {
-    background-color: #000000;
+    background-color: transparent;
     color: #ffffff;
     }
 
@@ -136,7 +176,7 @@ ol{
   padding-top: 0px;
   text-align: left;
   margin: 0px 0; /* 25px top and bottom, 0 left and right */
-  display: block;
+  /* display: block; */
 }
 #hero .container {
   padding: 0;
@@ -144,7 +184,7 @@ ol{
 }
 #hero .row{
   padding: 0;
-  margin-top: -10px;
+  margin-top: -15px;
   padding-bottom: 0px; 
   border-bottom: 0px;
   padding-top: 0px;
@@ -167,7 +207,6 @@ ol{
   padding-top: 600px;
 }
 .logo h1{
-    text-align: center;
     max-width: 150px;
     min-width: 641px
 }
@@ -177,15 +216,18 @@ nav {
   background: rgba(200, 54, 54, 0.5);
   z-index: 1000;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   top: 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 500;
     color: #FF5EAB;
-    display: inline-block;
     width: 100%;
   }
   .pic img {
@@ -275,18 +317,14 @@ nav {
 }
 
 nav ul li {
-	float: left;
+	/* remove float and add display block */
+	display: block;
 	margin-right: 15px;
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
 	margin-left: 40px;
-}
-
-nav ul li {
 	padding: 0px 0 0 0;
-  margin-top: 0;
+  	margin-top: 0;
 	position: relative;
-	display: block;
 	font-size: 14px;
 	color: #353535;
 	font-family: 'Raleway', sans-serif;
@@ -306,9 +344,36 @@ nav ul li {
 	display: none;
 	font-size: 23px;
 }
-
 .active {
 	color: #afafaf !important;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+} 
+/* .navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 16px;
+} */
+
+.navtoggle.responsive li  {
+  display: block;
+}
+#linkedin{
+  display: inline-block;
+  font-size: 40px;
+  color: #3d407b; 
+  padding-right: 20px;
+  padding-top: 20px;
+}
+#behance{
+  display: inline-block;
+  font-size: 40px;
+  color: #3d407b; 
 }
 
 /* ==============================
@@ -322,7 +387,35 @@ Medium devices (640px and larger)
 .col-md-3 {
 		width: calc(100%/3);
 	}
+  nav ul li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
+.svg{
+  width: 70%;
+}
+
+/* .navtoggle.responsive li  {
+  display: block;
+} */
+/* .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+} */
 
 /* ==============================
 Large devices (1024px or larger)
