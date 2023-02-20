@@ -55,51 +55,62 @@ height: 100vh; /* adjust this as needed */
         width: 100%;
     }
     a {
-    color: #FF5EAB;
+    color: gray;
     text-decoration: none; /* No underlining */
     }
     a:hover {
-    color: black;
+    color: #FF5EAB;
     text-decoration: underline; /* Underlining when hovering over a link */
     }
     a:visited { /* visited link */
-    color: darkgrey;
+    color: black;
+    }
+    nav a:visited {
+      color: lightgray;
     }
     a:active { /* selected link */
     color: lightgreen;
     }
-    a:hover,
     a:focus {
-     color: black;
+     color: #FF5EAB;
     text-decoration: underline;
     }
     .button {
     display: inline-block; 
-    background-color: lightgray;
+    background-color: white;
     color: #000000; /* needed to override the default link color */
     font-weight: 400;
-    padding: 10px;
-    border-radius: 6px;
-    border-bottom: 2px solid black; /* width of the border, type, color */
-    transition-property: 0.2s opacity;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    border: 1px solid black; /* width of the border, type, color */
+    transition-property: 0.2s;
     margin-top: 25px;
+    box-shadow: 0px 2px 2px grey;
+    text-transform: uppercase;
     }
     .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+    background-color: #000000;
+    color: #F1F0F1;
     }
     .button:active {
     color: lightsalmon;
     }
     .button.contact {
-    background-color: #3d407b;
+    background-color: #FF5EAB;
     color: white;
     text-transform: uppercase;
-    border: 1px solid #3d407b;
+    border: 1px solid #FF5EAB;
+    box-shadow: 0px 3px 5px grey;
+    margin-bottom: 25px;
     }
     .button.contact:hover {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: white;
+    color: #FF5EAB;
     }
 
 ol{
@@ -124,8 +135,7 @@ ol{
   border-bottom: 0px; 
   padding-top: 0px;
   text-align: left;
-  margin: 0px 0; /* 25px top and bottom, 0 left and right */
-  /* display: block; */
+  margin: 0px 0;
 }
 #hero .container {
   padding: 0;
@@ -161,11 +171,11 @@ ol{
 }
 nav {
   position: fixed;
-  background: rgb(200, 54, 54); /* The Fallback */
+  background: rgb(200, 54, 54);
   background: rgba(200, 54, 54, 0.5);
   z-index: 1000;
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   top: 0;
 }
 nav > ul {
@@ -242,6 +252,9 @@ nav ul li a {
 	transition: all 0.5s ease-in-out 0s;
 }
 
+#name {
+  float: left;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Navbar Top
 /*-----------------------------------------------------------------------------------*/
@@ -249,22 +262,19 @@ nav ul li a {
 nav {
 	position: fixed;
 	background: rgb(255, 255, 255);
-	z-index: 1000;
 	width: 100%;
 	padding: 20px;
-	display: none;
+	/* display: none; */
 	-webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
 	-moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
 	box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
 }
-
 .nav-menu {
 	float: right;
 	line-height: 32px;
 	margin-bottom: 0;
   margin-top: -23px;
 }
-
 nav ul li {
 	display: block;
 	margin-right: 15px;
@@ -286,7 +296,7 @@ nav ul li {
 #hero .logo {
 	float: left;
   max-width: 150px;
-  min-width: 641px
+  min-width: 641px;
 }
 .responsive {
 	display: none;
@@ -295,69 +305,180 @@ nav ul li {
 .active {
 	color: #afafaf !important;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* ==============================
+Header
+================================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navtoggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 35px;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-} 
+
 .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 0px;
   font-size: 16px;
 }
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
+
+.navtoggle li:last-child {
+  margin-left: 20px;
 }
-.navtoggle.responsive li  {
+
+/* ==============================
+Navigation
+================================= */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.nav-menu list-unstyled li{
+  width: 100%;
   display: block;
-  padding: 10px 0;
-  background-color: #ffffff;
-  text-align: center;
+
 }
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+
+/* ==============================
+Small devices (up to 639px)
+================================= */
+
+@media only screen and (max-width: 639px) {
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 16px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 30px;
+  }
+
+  .navtoggle.responsive ul {
+    display: block;
+    width: 100%;
+  }
+
+  .navtoggle.responsive ul li {
+    display: block;
+    margin: 0;
+  }
+
+  .navtoggle.responsive ul li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .name {
+    text-align: left;
+  }
+
 }
-#linkedin{
-  display: inline-block;
-  font-size: 40px;
-  color: #3d407b; 
-  padding-right: 20px;
-  padding-top: 20px;
-}
-#behance{
-  display: inline-block;
-  font-size: 40px;
-  color: #3d407b; 
-}
-.svg{
-  width: 70%;
-}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
-.col-md-6 {
-		width: 50%;
-	}
 
-.col-md-3 {
-		width: calc(100%/3);
-	}
-  nav ul li {
-    display: inline-block;
-  }
+@media only screen and (min-width: 640px) {
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
+  .navtoggle.responsive li  {
+    display: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
   .navtoggle li:last-child {
     display: none;
   }
-  .navtoggle.responsive li  {
-    display: block;
-  } 
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-3 {
+    width: calc(100%/3);
+  }
+
 }
+
+#nav {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
 #project-1 {
   transition: transform 0.5s ease-out;
 }
