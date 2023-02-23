@@ -17,11 +17,11 @@ background-repeat: no-repeat;
 background-position: center;
 height: 100vh; /* adjust this as needed */
 }
-@font-face {
+/* @font-face {
     font-family: 'MerchantLight';
     src: url(fonts/MerchantLight.ttf);
     font-family: 'merchant';
-}
+} */
     body {
     background-color: white;
     font-family: Raleway, sans-serif;
@@ -30,24 +30,25 @@ height: 100vh; /* adjust this as needed */
     color: #53565B;
     }
     
-    h1, h2, h3, h4 {
+    /* h1, h2, h3, h4 {
     line-height: 1.5;
     }
-    
+     */
     h1 {
-    font-family: 'merchant';
-    font-size: 48;
+    font-family: 'Questrial', sans-serif;
+    font-size: 70;
     font-weight: 400;
     color: #F1F0F1;
     }
     h2 {
-        font-family: 'merchant';
+        font-family: 'Questrial', sans-serif;
         font-size: 17;
         font-weight: 300;
+        color: #FF5EAB;
     }
     h3{
-        font-family: 'merchant';
-        font-size: 20;
+        font-family: 'Questrial', sans-serif;
+        font-size: 80;
         font-weight: 400;
         color: #FF5EAB;
     }
