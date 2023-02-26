@@ -36,7 +36,7 @@ height: 100vh; /* adjust this as needed */
      */
     h1 {
     font-family: 'Questrial', sans-serif;
-    font-size: 70;
+    /* font-size: 45px; */
     font-weight: 400;
     color: #F1F0F1;
     }
@@ -181,6 +181,7 @@ ol{
 }
 .intro{
   padding-top: 400px;
+  font-size: 32px;
 }
 .logo h1{
     max-width: 150px;
@@ -209,9 +210,12 @@ nav > ul {
   .pic img {
     width: 60%;
     height: auto; /* preserve aspect ratio */
-    float: right;
-    margin-right: 40px;
-    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* float: right; */
+    /* margin-right: 40px; */
+    padding-top: 20px;
  }
 .about-me {
   margin-top: 100px;
@@ -489,7 +493,7 @@ Medium devices (640px and larger)
   #hero h1 {
     text-align: right;
     padding-right: 30px;
-    font-size: 40px;
+    font-size: 45px;
 }
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -517,7 +521,6 @@ Medium devices (640px and larger)
   .col-md-3 {
     width: calc(100%/3);
   }
-
 }
 
 #nav {
