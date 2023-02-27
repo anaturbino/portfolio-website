@@ -17,11 +17,6 @@ background-repeat: no-repeat;
 background-position: center;
 height: 100vh; /* adjust this as needed */
 }
-/* @font-face {
-    font-family: 'MerchantLight';
-    src: url(fonts/MerchantLight.ttf);
-    font-family: 'merchant';
-} */
     body {
     background-color: white;
     font-family: Raleway, sans-serif;
@@ -277,7 +272,7 @@ nav ul li a {
   float: left;
 }
 i{
-  font-size: 32;
+  font-size: 16px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -436,10 +431,21 @@ Small devices (up to 639px)
   #about-nav{
     scroll-padding-top:0px;
   }
+  #hero{
+    position: fixed;
+    margin-top: -50px;
+  }
   h3{
     font-size: 25px;
     padding-left: 15px;
 
+  }
+  .intro{
+    padding-top: 400px;
+    font-size: 28px;
+  }
+  h1{
+    font-size: 28px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -506,7 +512,7 @@ Medium devices (640px and larger)
   #hero h1 {
     text-align: right;
     padding-right: 30px;
-    font-size: 45px;
+    font-size: 30px;
 }
   .navtoggle li:not(:last-child) {
     display: inline-block;
