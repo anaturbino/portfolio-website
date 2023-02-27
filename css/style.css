@@ -431,17 +431,17 @@ Small devices (up to 639px)
   #about-nav{
     scroll-padding-top:0px;
   }
-  #hero{
+  /* #hero{
     position: fixed;
     margin-top: -50px;
-  }
+  } */
   h3{
     font-size: 25px;
     padding-left: 15px;
 
   }
   .intro{
-    padding-top: 400px;
+    padding-top: 300px;
     font-size: 28px;
   }
   h1{
