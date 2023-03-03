@@ -33,19 +33,19 @@ height: 100vh; /* adjust this as needed */
     font-family: 'Questrial', sans-serif;
     /* font-size: 45px; */
     font-weight: 400;
-    color: #F1F0F1;
+    color: #ffffff;
     }
     h2 {
         font-family: 'Questrial', sans-serif;
         font-size: 17;
         font-weight: 300;
-        color: #FF5EAB;
+        color: #FF51A4;
     }
     h3{
         font-family: 'Questrial', sans-serif;
         font-size: 80;
         font-weight: 400;
-        color: #FF5EAB;
+        color: #FF51A4;
     }
     img{
         width: 100%;
@@ -55,7 +55,7 @@ height: 100vh; /* adjust this as needed */
     text-decoration: none; /* No underlining */
     }
     a:hover {
-    color: #FF5EAB;
+    color: #FF51A4;
     text-decoration: underline; /* Underlining when hovering over a link */
     }
     a:visited { /* visited link */
@@ -69,7 +69,7 @@ height: 100vh; /* adjust this as needed */
     color: lightgreen;
     }
     a:focus {
-     color: #FF5EAB;
+     color: #FF51A4;
     }
     #resume{
       display: inline-block; 
@@ -113,16 +113,17 @@ height: 100vh; /* adjust this as needed */
     color: lightsalmon;
     }
     .button.contact {
-    background-color: #FF5EAB;
+    background-color: #FF51A4;
     color: white;
     text-transform: uppercase;
-    border: 1px solid #FF5EAB;
+    font-weight: 500;
+    border: 1px solid #FF51A4;
     box-shadow: 0px 3px 5px grey;
     margin-bottom: 25px;
     }
     .button.contact:hover {
     background-color: white;
-    color: #FF5EAB;
+    color: #FF51A4;
     }
 
 ol{
@@ -255,7 +256,6 @@ nav ul li a {
 	/* position: relative; */
 	display: block;
 	font-size: 12px;
-	color: #FF5EAB;
 	letter-spacing: 0.1em;
 	font-weight: 500;
 	line-height: 14px;
@@ -305,7 +305,7 @@ nav ul li {
   	margin-top: 0;
 	position: relative;
 	font-size: 14px;
-	color: #FF5EAB;
+	color: #FF51A4;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	line-height: 16px;
@@ -387,10 +387,10 @@ header {
 }
 
 #linkedin:hover{
-  color: #FF5EAB;
+  color: #FF51A4;
 }
 #behance:hover {
-  color: #FF5EAB;
+  color: #FF51A4;
 }
 #behance{
   display: inline-block;
@@ -414,7 +414,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #FF5EAB;
+  color: grey;
 }
 .nav-menu list-unstyled li{
   width: 100%;
@@ -588,21 +588,21 @@ Medium devices (640px and larger)
   transform: translateX(-10px);
 }
 #foreign{
-  padding-top: 100px;
+  padding-top: 30px;
   transition: transform 0.5s ease-out;
 }
 #foreign:hover {
   transform: translateX(-10px);
 }
 #alwaysfive{
-  padding-top: 100px;
+  padding-top: 0px;
   transition: transform 0.5s ease-out;
 }
 #alwaysfive:hover {
   transform: translateX(-10px);
 }
 #noted{
-  padding-top: 140px;
+  padding-top: 30px;
   transition: transform 0.5s ease-out;
 }
 #noted:hover {
